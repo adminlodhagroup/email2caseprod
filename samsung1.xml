@@ -4834,7 +4834,7 @@ $(this).removeClass("hideselect");
                   //var x ="https://eu1.salesforce.com/"+data.caseId
                   
                   //var x ="https://eu1.salesforce.com/"+datacc.caseId+"/e?retURL=%2F"+datacc.caseId;
-                  var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+datacc.caseId;
+                  var x ="https://eu1.salesforce.com/apex/EditCasesForRM?id="+datacc.caseId;
 				  
                 //https://eu1.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
