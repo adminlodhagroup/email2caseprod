@@ -2912,7 +2912,7 @@ input.dp-applied {
 						if (!$this.is('.disabled')) {
 							c.setSelected(d, !$this.is('.selected') || !c.selectMultiple, false, true);
 							if (c.closeOnSelect) {
-								// Focus the next input in the formÃ¢â‚¬Â¦
+								// Focus the next input in the formÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦
 								if (c.settings.autoFocusNextInput) {
 									var ele = c.ele;
 									var found = false;
@@ -3196,7 +3196,7 @@ input.dp-applied {
  * isWeekend, isWeekDay, getDaysInMonth, getDayName, getMonthName, getDayOfYear, getWeekOfYear,
  * setDayOfYear, addYears, addMonths, addDays, addHours, addMinutes, addSeconds methods
  *
- * Copyright (c) 2006 JÃƒÂ¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
+ * Copyright (c) 2006 JÃƒÆ’Ã‚Â¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
  *
  * Additional methods and properties added by Kelvin Luck: firstDayOfWeek, dateFormat, zeroTime, asString, fromString -
  * I've added my name to these methods so you know who to blame if they are broken!
@@ -5283,13 +5283,13 @@ $(this).removeClass("hideselect");
 				   {
             //var x ="https://eu1.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
 				  //https://c.cs8.visual.force.com/apex/EditCasesForRM?id=500L0000003MbW0
-				  var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
+				  var x ="https://eu1.salesforce.com/apex/EditCasesForRM?id="+data.caseId;
               //https://eu1.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
 				  }
 				  else
 				  {
-				  var x = "https://c.cs8.visual.force.com/apex/CM_ChildCaseCreatePage?acctId="+data.AccountId+"&ParentId="+data.caseId+"&ptype=Multiple Request";
+				  var x = "https://eu1.salesforce.com.com/apex/CM_ChildCaseCreatePage?acctId="+data.AccountId+"&ParentId="+data.caseId+"&ptype=Multiple Request";
 				  //var x ="https://eu1.salesforce.com/"+data.caseId+"/e?retURL=%2F"+data.caseId;
                 //https://eu1.salesforce.com/500L00000033PPaIAM/e?retURL=%2F500L00000033PPaIAM  
                   window.open(x,"_blank","","");
