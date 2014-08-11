@@ -2912,7 +2912,7 @@ input.dp-applied {
 						if (!$this.is('.disabled')) {
 							c.setSelected(d, !$this.is('.selected') || !c.selectMultiple, false, true);
 							if (c.closeOnSelect) {
-								// Focus the next input in the formâ€¦
+								// Focus the next input in the formÃ¢â‚¬Â¦
 								if (c.settings.autoFocusNextInput) {
 									var ele = c.ele;
 									var found = false;
@@ -3196,7 +3196,7 @@ input.dp-applied {
  * isWeekend, isWeekDay, getDaysInMonth, getDayName, getMonthName, getDayOfYear, getWeekOfYear,
  * setDayOfYear, addYears, addMonths, addDays, addHours, addMinutes, addSeconds methods
  *
- * Copyright (c) 2006 JÃ¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
+ * Copyright (c) 2006 JÃƒÂ¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
  *
  * Additional methods and properties added by Kelvin Luck: firstDayOfWeek, dateFormat, zeroTime, asString, fromString -
  * I've added my name to these methods so you know who to blame if they are broken!
@@ -4888,9 +4888,11 @@ $(this).removeClass("hideselect");
     
 		if(rmemail_1 != from_email)
 		{	
-			validatingRM(pr_name,from_email,"CREATECASE",wing_name1,acctypes2);
+		//Prod issue debug commented
+			//validatingRM(pr_name,from_email,"CREATECASE",wing_name1,acctypes2);
 		
 		//alert("Please select the CRN to which the case needs to be created" );
+		 showCreateCase("CREATECASE");
 			
 			
 			
@@ -4941,7 +4943,9 @@ $(this).removeClass("hideselect");
 	  
 		if(rmemail_1 != from_email)
 		{	
-		   validatingRM(pr_name1,from_email,"ADDTOEXIST",wing_name2,acctypes1);
+			showCreateCase("ADDTOEXIST");
+		//prod issue debug commented
+		 //  validatingRM(pr_name1,from_email,"ADDTOEXIST",wing_name2,acctypes1);
 	    // alert("Case can not be created/attached as CRN Belongs to some other RM" );
 		//	return false;
 		}
