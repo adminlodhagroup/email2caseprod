@@ -5029,7 +5029,7 @@ $(this).removeClass("hideselect");
 			/*New logic for the sortable table*/
 					var rad ='<input type="radio" name="casenum" value ="'+caseno+'" /> ';
 						//  var xyz1 = '<a href="https://eu1.salesforce.com/'+caseId1+'/e?retURL=%2F'+caseId1+'" target="_blank" >'+caseno+'</a>';
-						  var xyz1 = '<a href="https://c.cs8.visual.force.com/apex/EditCasesForRM?id='+caseId1+' target="_blank" >'+caseno+'</a>';
+						  var xyz1 = '<a href="https://eu1.salesforce.com/apex/EditCasesForRM?id='+caseId1+' target="_blank" >'+caseno+'</a>';
 						  var htmlxx1 = '<input id="submitattachxx" class="button1" style="width: 59px;" type="SUBMIT" value="Attach" onclick ="bindButtonClick()" /> ' ;
 			
 			//$('#maintable5 tbody').append('<tr><td class="lalign">'+rad+'</td><td>'+xyz1+'</td><td>'+status+'</td><td>'+dates+'</td><td>'+caseage+'</td><td>'+reql11+'</td><td>'+reql22+'</td><td>'+natofreq11+'</td><td>'+htmlxx1+'</td></tr>');                  
