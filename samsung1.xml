@@ -3757,10 +3757,10 @@ Date.fullYearStart = '20';
 		}
 		else
 		{
-		 $("#CREATECASE111111").addClass('hideselect');
-         $("#ADDTOEXIST").addClass('hideselect');
-			$("#userrole").addClass('hideselect');
-			$("#overlay10").css("display","block");
+		// $("#CREATECASE111111").addClass('hideselect');
+        // $("#ADDTOEXIST").addClass('hideselect');
+		//	$("#userrole").addClass('hideselect');
+		//	$("#overlay10").css("display","block");
 		
 		}
 		
