@@ -4908,6 +4908,13 @@ $(this).removeClass("hideselect");
 			
 
 			});
+         
+         $("#tagpng").click(function(){
+alert("test for changes");
+getCaseDetailsbyRegEmail(subject);
+ });
+         
+         
 	  
 			//Add to attachment click case start	
 			$("#ADDTOEXIST").click(function(){ 
@@ -5424,7 +5431,7 @@ else
 //alert("calling else");
  // getCaseDetailsbyRegEmail(email_id);
    //    getCaseDetailsbyRegEmail(newcentralemailidfinale);
- getCaseDetailsbyRegEmail(subject); 
+ //getCaseDetailsbyRegEmail(subject); 
 getCancelledcasestatuspopup(email_id);
 getBasicRandomDetails(email_id);
 	//	getBasicDetails(email_id);
@@ -5761,7 +5768,7 @@ background: none repeat scroll 0 0 #FFF;
                             <a href="#tab1"><img src="https://axis111.googlecode.com/svn/search.png"></a>
                         </li>
                         <li class="menuimage">
-                            <a href="#tab2"><img src="https://axis111.googlecode.com/svn/tag.png"></a>
+                            <a href="#tab2" id="tagpng"><img src="https://axis111.googlecode.com/svn/tag.png"></a>
                         </li>
                         <li class="menuimage">
                             <a href="#tab3"><img src="https://axis111.googlecode.com/svn/camera.png"></a>
