@@ -4910,7 +4910,7 @@ $(this).removeClass("hideselect");
 			});
          
          $("#tagpng").click(function(){
-alert("test for changes");
+//alert("test for changes");
 getCaseDetailsbyRegEmail(subject);
  });
          
