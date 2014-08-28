@@ -3437,7 +3437,8 @@ getCaseDetailsbyRegEmail(subject);
              //  email_id =  email_id.replace('.','dot');
 				}
          // alert(key);
-            if(key == 'recipient_email')
+		 //replacing recipient_email to recipient_to_email
+            if(key == 'recipient_to_email')
                     {
                    
                     from_email  =matches[match][key];
