@@ -3257,7 +3257,7 @@ getCaseDetailsbyRegEmail(subject);
 			if($("#natreq option:selected").val() =="3")
 			{
 			
-			matchvalidateDate=validateCDate.match(/^\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?$/g);
+			matchvalidateDate=validateCDate.match(/^\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{1,2} ([APap][mM])?$/g);
 			//	matchvalidateDate=validateCDate.match(/\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?/g);
 			//	alert(matchvalidateDate);
 				if(matchvalidateDate =="" || matchvalidateDate ==null)
@@ -3285,7 +3285,7 @@ getCaseDetailsbyRegEmail(subject);
 				}
 		
 			//	matchvalidateDate=validateGDate.match(/\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?/g);
-				matchvalidateDate=validateGDate.match(/^\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2} ([APap][mM])?$/g);
+				matchvalidateDate=validateGDate.match(/^\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{1,2} ([APap][mM])?$/g);
 				if(matchvalidateDate =="" || matchvalidateDate ==null)
 				{
 					alert("Please choose correct Date format dd/mm/yyyy hh:mm AM/PM");
