@@ -2206,7 +2206,7 @@ $(".popover33333333333333333").hover(function() { },
   
   
 //Modified for new fieds Prashant
-$("#report tr").not(':first').hover(
+$("#report33333333333333333 tr").not(':first').hover(
   function () {
 	var thisTr =  $('input[name="cb"]:checked').parent();
 		    	
