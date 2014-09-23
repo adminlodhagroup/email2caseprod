@@ -4039,7 +4039,8 @@ background: none repeat scroll 0 0 #FFF;
                 
                     <label class="commongroup1">
                         <span>Case Resolution</span>
-                        <input type="text" name="txtcaseres" id ="txtcaseres" >
+                      <!--  <input type="text" name="txtcaseres" id ="txtcaseres" > -->
+                        <textarea id="txtcaseres" name="txtcaseres" rows="4" cols="50"></textarea>
                     </label>
                  <div class="clearer"></div>
                     <label class="complaintngroup">
