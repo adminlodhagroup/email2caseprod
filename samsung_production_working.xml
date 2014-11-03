@@ -1967,7 +1967,7 @@ $.ajax({
 		  //  $("#xx").text(data.crn_no);
        $('#maintable1').find("tr:gt(0)").remove();
 	    $('#txtspanclosedcases').text(data.casenumbers.length);
-		 $('closedCasesCountDiv').text(data.closedCases);
+		 $('#closedCasesCountDiv').text(data.closedCases);
 
 	   if(data.casenumbers.length ==0)
 	   {
