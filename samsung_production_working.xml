@@ -996,7 +996,7 @@
 						if (!$this.is('.disabled')) {
 							c.setSelected(d, !$this.is('.selected') || !c.selectMultiple, false, true);
 							if (c.closeOnSelect) {
-								// Focus the next input in the formÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦
+								// Focus the next input in the formÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦
 								if (c.settings.autoFocusNextInput) {
 									var ele = c.ele;
 									var found = false;
@@ -1280,7 +1280,7 @@
  * isWeekend, isWeekDay, getDaysInMonth, getDayName, getMonthName, getDayOfYear, getWeekOfYear,
  * setDayOfYear, addYears, addMonths, addDays, addHours, addMinutes, addSeconds methods
  *
- * Copyright (c) 2006 JÃƒÆ’Ã‚Â¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
+ * Copyright (c) 2006 JÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
  *
  * Additional methods and properties added by Kelvin Luck: firstDayOfWeek, dateFormat, zeroTime, asString, fromString -
  * I've added my name to these methods so you know who to blame if they are broken!
@@ -1967,6 +1967,8 @@ $.ajax({
 		  //  $("#xx").text(data.crn_no);
        $('#maintable1').find("tr:gt(0)").remove();
 	    $('#txtspanclosedcases').text(data.casenumbers.length);
+		 $('closedCasesCountDiv').text(data.closedCases);
+
 	   if(data.casenumbers.length ==0)
 	   {
 	   $('#maintable1 tbody').append('<tr>No Data Found </tr>');
@@ -4318,7 +4320,7 @@ background: none repeat scroll 0 0 #FFF;
                         <span style="background-color: rgb(249, 203, 137);border: 1px solid rgb(250, 163, 40);border-image-source: initial;border-image-slice: initial;border-image-width: initial;border-image-outset: initial;border-image-repeat: initial;background-image: linear-gradient(rgb(250, 169, 55), rgb(250, 169, 55));color: rgb(255, 255, 255);margin-left: 30px;font-weight: bold;">Closed</span>
  
  
-                        <span style="display: block;font-weight: 700;font-size: 53px;margin: 5px 35px;">0</span>
+                        <span style="display: block;font-weight: 700;font-size: 53px;margin: 5px 35px;"id="closedCasesCountDiv">0</span>
                     </div>
                 </div>
                 </div>
