@@ -996,7 +996,7 @@
 						if (!$this.is('.disabled')) {
 							c.setSelected(d, !$this.is('.selected') || !c.selectMultiple, false, true);
 							if (c.closeOnSelect) {
-								// Focus the next input in the formÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦
+								// Focus the next input in the formÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦
 								if (c.settings.autoFocusNextInput) {
 									var ele = c.ele;
 									var found = false;
@@ -1280,7 +1280,7 @@
  * isWeekend, isWeekDay, getDaysInMonth, getDayName, getMonthName, getDayOfYear, getWeekOfYear,
  * setDayOfYear, addYears, addMonths, addDays, addHours, addMinutes, addSeconds methods
  *
- * Copyright (c) 2006 JÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
+ * Copyright (c) 2006 JÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¶rn Zaefferer and Brandon Aaron (brandon.aaron@gmail.com || http://brandonaaron.net)
  *
  * Additional methods and properties added by Kelvin Luck: firstDayOfWeek, dateFormat, zeroTime, asString, fromString -
  * I've added my name to these methods so you know who to blame if they are broken!
@@ -3237,6 +3237,33 @@ getCaseDetailsbyRegEmail(subject);
             }
 			*/
             
+           var txtRemarksValue ="";
+	   			txtRemarksValue =  $("#txtremarks").val();
+				
+				if(txtRemarksValue==""||txtRemarksValue==null)
+				//else if(txtRemarksValue =="" || txtRemarksValue ==null)
+				{
+					alert("Please Enter Initial Remarks");
+					return false;
+				 }
+
+				 var comm="";
+				 comm=$("#commty option:selected").val();
+				if(comm==""||comm=="1"||comm=="--None--"){
+					 alert("Please Select Communication Type");
+					 return false;
+				 }
+		
+			var nor="";
+			nor=$("#natreq option:selected").val();
+			//alert("NOR....."+nor);
+			//var nnn = 
+			if(nor==""|| nor=="1"|| nor=="--None--"){
+			  alert("Please Select Nature of Request");	
+			  return false;
+			}
+
+            
             var reqc1="";
             var reqc2="";
             if($("input:radio[name='casetype']:checked").val() == "2")
@@ -3249,15 +3276,26 @@ getCaseDetailsbyRegEmail(subject);
              reqc1 =parseInt($("#reql1 option:selected").val());
              reqc2=$("#ddlSubRequest option:selected").val();
 			 
-			 if(reqc1 =="" || reqc2=="" || reqc1 =="1" || reqc2 =="1" )
+			 if((reqc1 ==""|| reqc1 =="1" || reqc1=="--None--"||reqc1==null)&&(reqc2==""  || reqc2 =="1"|| reqc2==null))
 			 {
 			 alert("Kindly select the values for the request L1 and L2");
 			 return false;
 			 }
+		else{
+			if(reqc1 == "" || reqc1 == "1"){
+				alert("Please select  L1 value");
+				return false;
+			   }
 			 
+			if(reqc2 == "" || reqc2 == "1" || reqc2=="--None--" || reqc2==null){
+				alert("Please select  L2 value");
+							return false;
+			  }
 			 
+			 }
             }
 			
+
 			
 			
 			var validateCDate = $("#txtdtcomplaint").val();
