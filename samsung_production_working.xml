@@ -2737,7 +2737,7 @@ $("#overlay6").css("display","block");
 			//GLOBAL SEARCH BUTTON
 			$("#SUBMITSEARCH").click(function()
 			{
-       $("maintable5 tr").remove();
+       $("#maintable5 tr").remove();
          
        //  alert("CALLED");
          // getBasicDetails(email_id);
