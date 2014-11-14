@@ -2737,9 +2737,11 @@ $("#overlay6").css("display","block");
 			//GLOBAL SEARCH BUTTON
 			$("#SUBMITSEARCH").click(function()
 			{
+       $("maintable5 tr").remove();
+         
        //  alert("CALLED");
          // getBasicDetails(email_id);
-			 //  getRegisteredUser(email_id);
+			 //  getRegisteredUser(email_id);$
 			    //  $("#content_div").removeClass("content_div_invisible").addClass("content_div_visible");
                 
 			 var params = $("#inpname").val();
