@@ -7,7 +7,7 @@
     author_email="admin@lodhagroup.in"
     author_location="Lodha Excelus, Mahalaxmi, NM JOSHI MARG,Mumbai ">
 
-    <!-- Declare feature dependencies. -->
+   
 
     <!-- This one is not specific to Gmail contextual gadgets. -->
     <Require feature="dynamic-height"/>
